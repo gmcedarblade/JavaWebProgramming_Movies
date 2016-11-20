@@ -6,6 +6,11 @@
 	<%@ include file="" %>
 </head>
 <body>
+<div class="container">
+	<div class="hero-unit">
+		<h1>Movie List</h1>
+	</div>
 
+</div>
 </body>
 </html>
