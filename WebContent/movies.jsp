@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@page import="edu.cvtc.web.model.Movie"%>
 <%@page import="edu.cvtc.web.util.WorkbookUtility"%>
 <%@page import="java.io.File"%>
 <%@page import="java.util.ArrayList"%>
@@ -23,7 +24,7 @@
 			List<Movie> movies = new ArrayList<>();
 			final String filePath = session.getServletContext().getRealPath("/assets/movieList.xlsx");
 			final File inputFile = new File(filePath);
-			movies = WorkbookUtility.retrieveMoviesFromWorkbook(inputFile);
+			movies = WorkbookUtility.retrieveMovieFromWorkbook(inputFile);
 
 			final String sortType = request.getParameter("sort");
 			
@@ -37,7 +38,7 @@
 					<h2><%=movie.getTitle() %> </h2>
 					<p>
 						Directed by: <%=movie.getDirector() %>
-						Runtime: <%=movie.getLengthInMinutes %>
+						Runtime: <%=movie.getLengthInMinutes() %>
 					</p>
 				</div>
 				<%
