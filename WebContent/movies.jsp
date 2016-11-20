@@ -12,7 +12,7 @@
 	</div>
 	<%@ include file="assets/include/navigation.jsp" %>
 	
-	
+	<%@ include file="assets/include/footer.jsp" %>
 </div>
 <%@ include file="assets/include/scripts.jsp" %>
 </body>
