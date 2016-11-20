@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Java Web Programming: Homework Home</title>
+	<title>Java Web Programming: Homework Home</title>
+	<meta name="description" content="Home page for assignments in Java Web Programming.">
+	<%@ include file="" %>
 </head>
 <body>
 
