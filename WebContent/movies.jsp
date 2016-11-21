@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<%@page import="edu.cvtc.web.comparators.DirectorComparator"%>
+<%@page import="edu.cvtc.web.comparators.LengthComparator"%>
+<%@page import="edu.cvtc.web.comparators.TitleComparator"%>
+<%@page import="java.util.Collections"%>
+<%@page import="edu.cvtc.web.comparators.SortBy"%>
 <%@page import="edu.cvtc.web.model.Movie"%>
 <%@page import="edu.cvtc.web.util.WorkbookUtility"%>
 <%@page import="java.io.File"%>
@@ -29,7 +34,21 @@
 			final String sortType = request.getParameter("sort");
 			
 			if (null != sortType) {
-				//switch casses...
+				
+				switch (sortType) {
+					case SortBy.TITLE:
+						Collections.sort(movies, new TitleComparator());
+						break;
+					case SortBy.LENGTH_IN_MINUTES:
+						Collections.sort(movies, new LengthComparator());
+						break;
+					case SortBy.DIRECTOR:
+						Collections.sort(movies, new DirectorComparator());
+						break;
+					default:
+						break;
+				}
+				
 			}
 			
 			for(final Movie movie : movies) {
