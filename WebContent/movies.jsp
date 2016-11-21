@@ -22,7 +22,7 @@
 		try {
 			
 			List<Movie> movies = new ArrayList<>();
-			final String filePath = session.getServletContext().getRealPath("/assets/movieList.xlsx");
+			final String filePath = session.getServletContext().getRealPath("/assets/movieSheet.xlsx");
 			final File inputFile = new File(filePath);
 			movies = WorkbookUtility.retrieveMovieFromWorkbook(inputFile);
 
@@ -38,7 +38,7 @@
 					<h2><%=movie.getTitle() %> </h2>
 					<p>
 						Directed by: <%=movie.getDirector() %>
-						Runtime: <%=movie.getLengthInMinutes() %>
+						<br>Runtime: <%=movie.getLengthInMinutes() %>
 					</p>
 				</div>
 				<%
