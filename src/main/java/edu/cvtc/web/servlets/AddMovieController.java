@@ -15,7 +15,7 @@ import edu.cvtc.web.model.Movie;
 /**
  * Servlet implementation class AddMovieController
  */
-@WebServlet("/AddMovie")
+@WebServlet("/addMovie")
 public class AddMovieController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

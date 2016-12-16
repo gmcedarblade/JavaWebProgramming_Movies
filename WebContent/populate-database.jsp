@@ -17,7 +17,7 @@
 	 	
 	 	try {
 	 		
-	 		final String filePath = session.getServletContext().getRealPath("/assets/movieList.xlsx");
+	 		final String filePath = session.getServletContext().getRealPath("/assets/movieSheet.xlsx");
 	 		final MovieDao movieDao = new MovieDaoImpl();
 	 		
 	 		movieDao.populateMovieTable(filePath);

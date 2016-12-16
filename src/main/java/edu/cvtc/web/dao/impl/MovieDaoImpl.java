@@ -23,7 +23,7 @@ public class MovieDaoImpl implements MovieDao{
 	private static final String DROP_TABLE_MOVIE = "drop table if exists movie;";
 	private static final String CREATE_TABLE_MOVIE = "create table movie (id integer primary key autoincrement,"
 			+ "title text, runTime integer, director text);";
-	private static final String SELECT_ALL_FROM_MOVIE = "select * from person;";
+	private static final String SELECT_ALL_FROM_MOVIE = "select * from movie;";
 	
 	@Override
 	public void populateMovieTable(final String filePath) throws Exception {
