@@ -16,7 +16,7 @@
 				<label for="title"><strong>Title:</strong></label>
 				<input name="title">
 				
-				<label for="runTime"><strong>Run Time:</strong></label>
+				<label for="runTime"><strong>Run Time in minutes:</strong></label>
 				<input name="runTime">
 				
 				<label for="director"><strong>Director:</strong></label>
