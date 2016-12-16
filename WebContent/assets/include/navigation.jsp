@@ -11,5 +11,4 @@
 		</ul>
 	</li>
 	<li><a href="add-movie.jsp">Add Movie</a>
-	<li><a href="populate-database.jsp">Populate Database</a>
 </ul>
