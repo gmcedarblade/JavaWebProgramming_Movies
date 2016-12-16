@@ -21,7 +21,7 @@
  		</form>
  		<form action="Search" method="post">
  			<div class="form-group">
-				<label for="runTime"><strong>Search by Run Time:</strong></label>
+				<label for="runTime"><strong>Search by Run Time in minutes:</strong></label>
 				<input name="runTime">
 				<input name="searchType" type="hidden" value="runTime">
 				<input class="btn btn-primary btn-lg" type="submit" value="Search">
